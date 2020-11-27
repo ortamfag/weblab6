@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Необходимые мета-теги -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <title>Клиент сервер </title>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid"> <!--полный размер используемого экрана -->
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">MoscowPolytech </a>
+      </div>
+
+      <div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Введение</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Таблица</a>
+          </li>
+        </ul>
+    </div>
+
+
+      <div class="header__buttons">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login">
+          Вход
+        </button>
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#register">
+          Регистрация
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Button trigger modal -->
+<div class="container-fluid">
+<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#exampleModal">
+  Важно к прочтению!
+</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Внимание!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Спасибо за внимание!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть, но синее</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Button trigger modal -->
+
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginLable">Вход в аккаунт</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="loginEmail1">Email</label>
+            <input type="email" class="form-control" id="loginEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="loginPassword1">Пароль</label>
+            <input type="password" class="form-control" id="loginPassword1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+        <button form="loginForm" type="submit" class="btn btn-primary">Войти</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно регистрации -->
+<div class="modal fade" id="register" aria-labelledby="registerLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registerLable">Регистрация</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="registerForm">
+          <div class="form-group">
+            <label for="registerEmail">Email</label>
+            <input type="email" class="form-control" id="registerEmail" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="registerPassword1">Пароль</label>
+            <input type="password" class="form-control" id="registerPassword1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+        <button form="registerForm" type="submit" class="btn btn-primary">Создать аккаунт</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <main class="main pt-5 pl-3">
+    <h1 class="text-center"> Клиент-серверная архитектура </h1>
+    <br>
+
+    <p class="text-left">
+      Здесь мы разберемся с концепцией, которая позволяет нам бувально все действия в сети Интернет.
+      Данная концепция получила название <strong>«клиент-сервер»</strong>. Как понятно из названия, в данной концепции участвуют две стороны: клиент и сервер.
+      Здесь всё как в жизни: клиент – это заказчик той или иной услуги, а сервер – поставщик услуг.
+      Клиент и сервер физически представляют собой программы, например, типичным клиентом является браузер.
+    </p>
+
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
